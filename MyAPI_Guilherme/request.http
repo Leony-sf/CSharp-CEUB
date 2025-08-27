@@ -1,0 +1,21 @@
+###
+GET https://localhost:5001/api/bebidas
+Content-Type: application/json
+
+###
+POST https://localhost:5001/api/bebidas/nao-alcoolica
+Content-Type: application/json
+
+"Suco de Laranja"
+
+###
+POST https://localhost:5001/api/bebidas/alcoolica
+Content-Type: application/json
+
+{
+  "nome": "Cerveja",
+  "teorAlcoolico": 5.0
+}
+###
+GET https://localhost:5001/api/bebidas/1
+Content-Type: application/json
